@@ -7,9 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/room/:id' element={<Room/>}/>
-        <Route exact path='/' element={<Main/>}/>
-        <Route element={<NotFound404/>}/>
+        <Route exact path='/room/:id' component={Room}/>
+        <Route exact path='/' component={Main}/>
+        <Route component={NotFound404}/>
       </Switch>
     </BrowserRouter>
   );
