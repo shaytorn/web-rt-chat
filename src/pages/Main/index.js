@@ -1,11 +1,11 @@
 import {useState, useEffect, useRef} from 'react';
 import socket from '../../socket';
 import ACTIONS from '../../socket/actions';
-import {useNavigate} from 'react-router';
+import {useHistory} from 'react-router';
 import {v4} from 'uuid';
 
 export default function Main() {
-  const history = useNavigate();
+  const history = useHistory();
   const [rooms, updateRooms] = useState([]);
   const rootNode = useRef();
 
