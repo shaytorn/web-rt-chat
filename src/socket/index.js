@@ -7,6 +7,6 @@ const options = {
   transports : ["websocket"]
 }
 
-const socket = io('https://web-rt-chat-2.onrender.com', options);
+const socket = io('http://91.222.236.156/', options);
 
 export default socket;
